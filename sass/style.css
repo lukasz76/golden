@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/Background_Image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 10vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.logo {
+  display: flex;
+  flex: 2;
+  height: 28px;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  flex: 2 5rem;
+  justify-content: space-around;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.header-text, .services-header, .portfolio-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80%;
+}
+
+h1 {
+  font-weight: 100;
+  font-family: 'Poly', serif;
+  letter-spacing: 3.6px;
+  font-size: calc(40px + (95 - 14) * ((80vw - 800px) / (1600 -300)));
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin: 40px;
+  letter-spacing: 2.2px;
+  font-size: calc(40px + (95 - 14) * ((100vw - 700px) / (1600 -300)));
+}
+
+button {
+  margin: 0;
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.6s;
+}
+
+button:hover {
+  background-color: #e9b818d7;
+}
+
+.services {
+  margin: 60px 0;
+  max-width: 90%;
+  margin: auto;
+}
+
+.services-header {
+  min-height: 30vh;
+  color: #000;
+}
+
+.services-header h3 {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  margin-top: 60px;
+}
+
+.services-header p {
+  color: #777;
+  font-size: 16px;
+  font-family: 'Poly', serif;
+  letter-spacing: 1px;
+}
+
+.cards {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 40vh;
+  flex-wrap: no-wrap;
+}
+
+.card {
+  flex: 1 1 15rem;
+  text-align: center;
+  padding: 30px;
+  font-size: calc(15px + (45 - 14) * ((100vw - 700px) / (1600 -300)));
+}
+
+.icon {
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+h4 {
+  padding: 20px;
+  color: #000;
+  font-size: 18px;
+}
+
+.portfolio {
+  margin-bottom: 40px;
+  background-color: #f7f7f7;
+}
+
+.portfolio-header {
+  color: #000;
+  min-height: 28vh;
+  position: relative;
+  bottom: 20px;
+}
+
+.portfolio-header h3 {
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  font-size: calc(45px + (45 - 14) * ((100vw - 500px) / (1600 -300)));
+}
+
+.portfolio-header p {
+  color: #777;
+  font-size: 16px;
+  font-family: 'Poly', serif;
+  letter-spacing: 1px;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  min-height: 900px;
+}
+
+.foto {
+  width: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  grid-gap: 1rem;
+}
+
+.footer {
+  max-height: 2vh;
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.footer h6 {
+  color: #555;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  min-width: 50%;
+}
+
+.media-icons {
+  width: 40px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: auto;
+    max-width: 100%;
+  }
+  h1, h2 {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    text-align: center;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul {
+    display: none;
+  }
+  h2 {
+    font-size: 18px;
+    margin: 5px;
+  }
+  h3, p {
+    text-align: center;
+  }
+  nav {
+    margin: 0 auto;
+  }
+  button {
+    width: 90px;
+    height: 35px;
+    margin: 20px 0 40px;
+    font-size: 10px;
+  }
+  .hamburger {
+    display: block;
+    height: 15px;
+    background-color: #ddd333;
+    position: absolute;
+    left: 90%;
+    top: 4%;
+  }
+  .footer {
+    flex-direction: column-reverse;
+    max-height: 5rem;
+  }
+}
